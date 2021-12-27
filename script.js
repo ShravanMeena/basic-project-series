@@ -9,11 +9,11 @@ const projectsArr = [
   },
   {
     id: 2,
-    title: "Second Project",
+    title: "Tabs",
     sub_title:
       "Some quick example text to build on the card title and make up the bulk of the card's content.",
     img: "https://cdn4.buysellads.net/uu/1/3386/1525189943-38523.png",
-    route:"./background-color-flipper/index.html"
+    route:"./tabs/index.html"
 
   },
   {
