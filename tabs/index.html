@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs || Javascript</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+    .content{
+        display: none;
+    }
+    .content.active{
+        display: block;
+    }
+
+    .tab-btn.active{
+            color: red !important;
+    }
+
+    h1{
+      font-weight: bold;
+      font-size: 30px !important;
+      color: red;
+    }
+</style>
+</head>
+<body>
+<div class="bg-white mainSection">
+  
+      <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative z-10 flex items-baseline justify-between pt-24 pb-6 border-b border-gray-200">
+          <h1 class="text-4xl font-extrabold tracking-tight text-gray-900">New Arrivals</h1>
+  
+          <div class="flex items-center">
+              <!-- Heroicon name: solid/view-grid -->
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+              </svg>
+            </button>
+
+          </div>
+        </div>
+  
+        <section aria-labelledby="products-heading" class="pt-6 pb-24">
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-x-8 gap-y-10">
+            <!-- Filters -->
+              <ul role="list" class="text-sm font-medium text-gray-900 space-y-4 pb-6 border-b border-gray-200">
+                <li>
+                  <a class="tab-btn active " data-id="totes"  href="#">
+                    Totes
+                  </a>
+                </li>
+  
+                <li>
+                  <a  class="tab-btn" data-id="backpacks"   href="#">
+                    Backpacks
+                  </a>
+                </li>
+  
+                <li>
+                  <a  class="tab-btn" data-id="travel" href="#">
+                    Travel Bags
+                  </a>
+                </li>
+  
+                <li  >
+                  <a  data-id="hip" class="tab-btn" href="#">
+                    Hip Bags
+                  </a>
+                </li>
+  
+                <li>
+                  <a  class="tab-btn" data-id="laptop" href="#">
+                    Laptop Sleeves
+                  </a>
+                </li>
+              </ul>
+            <!-- Product grid -->
+            <div class="lg:col-span-3">
+              <!-- Replace with your content -->
+
+              <div  style="display: flex;flex-direction: column;align-items: center;justify-content: center;" class="border-4 border-dashed border-gray-200 rounded-lg h-96 lg:h-full">
+
+                <div class="content active" id="totes">
+                
+                  <h1>
+                    Totes
+                  </h1>
+                  <p>
+                  </p>
+
+                </div>
+                <div class="content" id="backpacks">
+                  <h1>
+                    Backpacks
+                  </h1>
+                  <p></p>
+                </div>
+                <div class="content" id="travel">
+                  <h1>
+                    Travel Bags
+                  </h1>
+                  <p></p>
+                </div>
+                <div class="content" id="hip">
+                  <h1>
+                    Hip Bags
+                  </h1>
+                  <p></p>
+                </div>
+                <div class="content " id="laptop">
+                  <h1>Laptop Sleeves</h1>
+                  <p></p>
+                </div>
+
+              </div>
+              <!-- /End replace -->
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+    
+  <script src="./script.js"></script>
+</body>
+</html>
