@@ -4,7 +4,7 @@ const content = document.querySelectorAll(".content");
 const mainSection = document.querySelector(".mainSection");
 
 mainSection.addEventListener("click", function (e) {
-  const id = e.target.dataset.id;
+  const id = e.target.dataset.id; //to get data-id
 
   if (id) {
     btns.forEach(function (btn) {
@@ -12,11 +12,14 @@ mainSection.addEventListener("click", function (e) {
       e.target.classList.add("active");
     });
 
-    content.forEach(function(cnt){
-        cnt.classList.remove("active")
-    })
+    content.forEach(function (cnt) {
+      cnt.classList.remove("active");
+    });
 
-    const el = document.getElementById(id)
-    el.classList.add("active")
+    const el = document.getElementById(id);
+
+    el.classList.add("active");
+  } else {
+    console.log("no data-id found");
   }
 });

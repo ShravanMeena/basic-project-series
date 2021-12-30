@@ -16,6 +16,15 @@ const projectsArr = [
     route:"./tabs/index.html"
 
   },
+  {
+    id: 3,
+    title: "Quotes Generator",
+    sub_title:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    img: "./quotes-generator/preview.png",
+    route:"./quotes-generator/index.html"
+
+  },
   
 ];
 
@@ -33,8 +42,6 @@ window.addEventListener("DOMContentLoaded", function () {
             </div>
           </div>
       </div>
-    
-    
         `;
   });
 
